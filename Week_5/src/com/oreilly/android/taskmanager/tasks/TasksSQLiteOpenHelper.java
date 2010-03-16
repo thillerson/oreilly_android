@@ -28,8 +28,8 @@ public class TasksSQLiteOpenHelper extends SQLiteOpenHelper {
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		db.execSQL("alter table " + TASKS_TABLE + " add column " + TASK_ADDRESS + " text");
-		db.execSQL("alter table " + TASKS_TABLE + " add column " + TASK_LATITUDE + " integer");
-		db.execSQL("alter table " + TASKS_TABLE + " add column " + TASK_LONGITUDE + " integer");
+		db.execSQL("alter table " + TASKS_TABLE + " add column " + TASK_LATITUDE + " real");
+		db.execSQL("alter table " + TASKS_TABLE + " add column " + TASK_LONGITUDE + " real");
 	}
 
 	protected void dropAndCreate(SQLiteDatabase db) {
@@ -44,8 +44,8 @@ public class TasksSQLiteOpenHelper extends SQLiteOpenHelper {
 				TASK_NAME + " text, " +
 				TASK_COMPLETE + " text, " +
 				TASK_ADDRESS + " text, " +
-				TASK_LATITUDE + " integer, " +
-				TASK_LONGITUDE + " integer " +
+				TASK_LATITUDE + " real, " +
+				TASK_LONGITUDE + " real " +
 				");"
 			);
 	}
