@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plus_sign"> + </string>
+    <string name="show_local">Show local tasks only</string>
+    <string name="map_this_address">Map this Address</string>
+    <string name="use_this_location">Use This Location</string>
+    <string name="add_location_to_task">Add Location to Task</string>
+    <string name="remove_completed_tasks">Remove Completed</string>
+    <string name="no_tasks">No tasks.</string>
+    <string name="app_name">Task Manager</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add task</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsaved_changes_title">Unsaved Changes</string>
+    <string name="unsaved_changes_message">Would you like to add this task?</string>
+    <string name="discard">Discard</string>
+</resources>

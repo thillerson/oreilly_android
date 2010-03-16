@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView 
+		android:id="@+id/location_title"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+ 		android:text="@string/add_location_to_task"
+	    />
+	<EditText
+ 		android:id="@+id/task_address"
+ 		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/location_title"
+ 		android:lines="3"/>
+	<Button
+		android:id="@+id/map_location_button"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+		android:layout_below="@id/task_address"
+ 		android:text="@string/map_this_address"/>
+	<com.google.android.maps.MapView
+		android:id="@+id/map"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+		android:layout_below="@id/map_location_button"
+		android:layout_above="@+id/use_this_location_button"
+ 		android:clickable="true"
+ 		android:apiKey="0xNpjXHPZ2YMDPNE7pSzgzf2XDoGKkSdRLbgHiQ" /><!-- 0xNpjXHPZ2YMiTkg3-tI6gVhVMgupSMe_xtxfNw  -->
+	<Button
+		android:id="@id/use_this_location_button"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+ 		android:text="@string/use_this_location"/>
+</RelativeLayout>

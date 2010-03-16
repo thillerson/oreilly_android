@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView 
+		android:id="@+id/tasks_title"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+ 		android:text="@string/add_task"
+	    />
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/task_name"/>
+	<TextView 
+		android:id="@+id/address_text"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    />
+	<Button
+		android:id="@+id/add_location_button"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:text="@string/add_location_to_task"/>
+	<Button
+		android:id="@+id/add_button"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:text="@string/add_task"/>
+	<Button
+		android:id="@+id/cancel_button"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:text="@string/cancel"/>
+</LinearLayout>
