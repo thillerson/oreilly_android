@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="authorization">Authorization</string>
+    <string name="authorize">Authorize</string>
+    <string name="enter_pin">To authorize, sign in to Twitter and enter Pin here:</string>
+    <string name="no_tweets">No Tweets</string>
+    <string name="app_name">O\'Tweet</string>
+</resources>
