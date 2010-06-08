@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/main_menu_group">
+		<item android:id="@+id/menu_item_home" android:title="@string/home_timeline" />
+		<item android:id="@+id/menu_item_post" android:title="@string/post" />
+	</group>
+</menu>

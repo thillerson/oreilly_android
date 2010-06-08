@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_timeline">Home Timeline</string>
+    <string name="post">Post</string>
+    <string name="what_s_happening">What\'s Happening?</string>
+    <string name="authorization">Authorization</string>
+    <string name="authorize">Authorize</string>
+    <string name="enter_pin">To authorize, sign in to Twitter and enter Pin here:</string>
+    <string name="no_tweets">No Tweets</string>
+    <string name="app_name">O\'Tweet</string>
+    <string name="load_more_header">Load newer tweets...</string>
+    <string name="load_more_footer">Load older tweets...</string>
+    <string name="created_at_format">Created at: %s</string>
+    <string name="in_reply_to_format">In reply to: %s</string>
+    <string name="geo_location_format">at %f, %f</string>
+    <string name="loading_title">Loading Tweets</string>
+    <string name="loading_home_timeline_description">Loading Your Home Timeline</string>
+    <string name="too_many_characters">Too Many Characters</string>
+    <string name="tweet_is_blank">Tweet is Blank</string>
+    <string name="too_many_characters_description">Tweet can be no more than 140 characters</string>
+    <string name="blank_tweet_description">You can\'t post an empty message!</string>
+    <string name="posting_title">Posting</string>
+    <string name="posting_description">Posting Your Tweet</string>
+    <string name="tweet_posted">Tweet Posted!</string>
+</resources>
