@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="color_foreground">#FFBBBBBB</color>
+	<color name="color_background">#FFBBBBBB</color>
+	<color name="color_foreground_inverse">#FF444444</color>
+
+	<color name="title_color_light">#FFC01414</color>
+	<color name="title_color_dark">#FF860000</color>
+	<color name="title_border">#FF282828</color>
+
+	<color name="button_color_light">#FFC01414</color>
+	<color name="button_color_dark">#FF860000</color>
+	<color name="button_color_disabled">#FF430000</color>
+	<color name="button_default_border">#FF444444</color>
+	<color name="button_focused_border">#FFFFD400</color>
+	<color name="button_disabled_focused_border">#FFFFD400</color>
+
+	<color name="textfield_color_light">#FFFFFFFF</color>
+	<color name="textfield_color_dark">#FFDDDDDD</color>
+	<color name="textfield_color_disabled">#FFCCCCCC</color>
+	<color name="textfield_default_border">#FF444444</color>
+	<color name="textfield_focused_border">#FFFFD400</color>
+	<color name="textfield_disabled_focused_border">#FFFFD400</color>
+
+	<color name="list_item_color_light">#FFEEEEEE</color>
+	<color name="list_item_color_dark">#FFBBBBBB</color>
+	<color name="list_item_selected_color_light">#FFFFFFFF</color>
+	<color name="list_item_selected_color_dark">#FFDDDDDD</color>
+	<color name="list_item_pressed_color_light">#FFFFFFFF</color>
+	<color name="list_item_pressed_color_dark">#FFDDDDDD</color>
+	<color name="list_item_color_disabled">#FFCCCCCC</color>
+</resources>

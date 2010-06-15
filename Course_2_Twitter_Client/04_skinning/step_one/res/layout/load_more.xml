@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oreilly.android.otweet.layouts.LoadMoreListItem xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+    android:layout_width="fill_parent">
+   	<TextView
+   		android:id="@+id/load_more_text"
+   		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:textSize="20sp"
+   		android:text="Load More..."
+   		android:layout_margin="18dip"
+   		android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+	<ProgressBar
+		android:id="@+id/load_more_progress"
+		android:layout_width="16sp"
+		android:layout_height="16sp"
+		android:layout_toLeftOf="@id/load_more_text"
+		android:indeterminate="true"
+		android:visibility="invisible"
+		android:layout_marginRight="6sp"
+		android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</com.oreilly.android.otweet.layouts.LoadMoreListItem>

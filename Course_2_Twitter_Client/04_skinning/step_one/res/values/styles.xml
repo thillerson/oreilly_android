@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance" parent="android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorLink">#FFEE0000</item>
+    </style>
+    
+    <style name="TextAppearance.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+    <style name="TextAppearance.Button">
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+    <style name="TextAppearance.EditText">
+        <item name="android:textSize">14sp</item>
+    </style>
+ 
+    <style name="TextAppearance.Title.WindowTitle">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/window_title_background</item>
+    </style>
+
+    <style name="WindowTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.Title.WindowTitle</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+    
+</resources>

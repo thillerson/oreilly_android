@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+    <gradient
+       android:angle="270"
+       android:centerColor="@color/list_item_selected_color_light"
+       android:startColor="@color/list_item_selected_color_dark"
+       android:endColor="@color/list_item_selected_color_light"
+    />
+	<stroke android:color="@color/button_focused_border" android:width="4dip" />
+</shape>

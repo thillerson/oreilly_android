@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<TextView
+	   	android:id="@+id/title_text"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_margin="5dip"
+	   	android:text="@string/what_s_happening"
+    	style="@style/TextAppearance.Title" />
+	<TextView
+	   	android:id="@+id/counter_text"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_margin="5dip"
+	   	android:layout_alignParentRight="true" />
+	<EditText
+	   	android:id="@+id/tweet_contents"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+    	android:layout_below="@id/title_text"
+	   	android:layout_margin="5dip"
+	   	android:lines="4"
+	   	android:inputType="textCapSentences|textMultiLine|textAutoCorrect|textAutoComplete">
+	   	<requestFocus />
+   	</EditText>
+	<Button
+	   	android:id="@+id/post_button"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+    	android:layout_below="@id/tweet_contents"
+	   	android:layout_margin="5dip"
+	   	android:text="@string/post"
+	   	android:onClick="postButtonClicked" />
+</RelativeLayout>
