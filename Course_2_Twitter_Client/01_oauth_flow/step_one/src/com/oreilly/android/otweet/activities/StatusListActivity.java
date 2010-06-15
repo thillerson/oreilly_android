@@ -14,4 +14,4 @@ public class StatusListActivity extends ListActivity {
     setContentView(R.layout.main);
   }
   
- }
+}

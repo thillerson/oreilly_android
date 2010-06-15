@@ -40,9 +40,13 @@ public class StatusListItem extends RelativeLayout {
 		statusText.setText(status.getText());
 		avatarView.setImageDrawable(null);
     Thread loadUserAvatarThread = new Thread() {
+      @Override
       public void run() {
         try {
-          avatarDrawable = Drawable.createFromStream(user.getProfileImageURL().openStream(), user.getName());
+          avatarDrawable = Drawable.createFromStream(
+              user.getProfileImageURL().openStream(),
+              user.getName()
+          );
         } catch (IOException e) {
           Log.e(getClass().getName(), "Could not load image.", e);
         }

@@ -105,8 +105,8 @@ public class StatusListActivity extends ListActivity {
     Thread loadMoreThread = new Thread() {
       public void run() {
         try {
-          ArrayList<Status> statii = twitter.getHomeTimeline(new Paging(1).sinceId(adapter.getFirstId()));
-          Runnable finishedLoadingNewerTask = new LoadNewerResult(statii);;
+          ArrayList<Status> statii = twitter.getHomeTimeline(new Paging().sinceId(adapter.getFirstId()));
+          Runnable finishedLoadingNewerTask = new LoadNewerResult(statii);
           handler.post(finishedLoadingNewerTask);
         } catch (TwitterException e) {
           throw new RuntimeException("Unable to load home timeline", e);

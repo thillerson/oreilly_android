@@ -29,7 +29,11 @@ public class LoadMoreAsyncTask extends AsyncTask<Void, Void, LoadMoreAsyncTask.L
     }
   }
   
-  public LoadMoreAsyncTask(LoadMoreStatusesResponder responder, Twitter twitter, long targetId, boolean newerThanId) {
+  public LoadMoreAsyncTask(
+      LoadMoreStatusesResponder responder,
+      Twitter twitter,
+      long targetId,
+      boolean newerThanId) {
     super();
     this.responder = responder;
     this.targetId = targetId;
@@ -42,9 +46,9 @@ public class LoadMoreAsyncTask extends AsyncTask<Void, Void, LoadMoreAsyncTask.L
     ArrayList<twitter4j.Status> statii = null;
     try {
       if (newerThanId) {
-          statii = twitter.getHomeTimeline(new Paging(1).sinceId(targetId));
+          statii = twitter.getHomeTimeline(new Paging().sinceId(targetId));
       } else {
-        statii = twitter.getHomeTimeline(new Paging(1).maxId(targetId));
+        statii = twitter.getHomeTimeline(new Paging().maxId(targetId));
       }
     } catch (TwitterException e) {
       throw new RuntimeException("Unable to load timeline", e);

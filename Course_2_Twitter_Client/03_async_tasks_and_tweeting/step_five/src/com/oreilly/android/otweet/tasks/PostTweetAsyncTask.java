@@ -31,15 +31,15 @@ public class PostTweetAsyncTask extends AsyncTask<String, Void, twitter4j.Status
   }
 
   @Override
-  protected void onPostExecute(twitter4j.Status result) {
-    super.onPostExecute(result);
-    responder.tweetPosted(result);
-  }
-
-  @Override
   protected void onPreExecute() {
     super.onPreExecute();
     responder.tweetPosting();
+  }
+
+  @Override
+  protected void onPostExecute(twitter4j.Status result) {
+    super.onPostExecute(result);
+    responder.tweetPosted(result);
   }
 
 }

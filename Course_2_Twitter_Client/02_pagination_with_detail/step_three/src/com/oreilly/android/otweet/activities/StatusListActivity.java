@@ -81,7 +81,7 @@ public class StatusListActivity extends ListActivity {
   private void loadNewerTweets() {
     try {
       headerView.hideProgress();
-      ArrayList<Status> statii = twitter.getHomeTimeline(new Paging(1).sinceId(adapter.getFirstId()));
+      ArrayList<Status> statii = twitter.getHomeTimeline(new Paging().sinceId(adapter.getFirstId()));
       adapter.appendNewer(statii);
       getListView().setSelection(1);
     } catch (TwitterException e) {

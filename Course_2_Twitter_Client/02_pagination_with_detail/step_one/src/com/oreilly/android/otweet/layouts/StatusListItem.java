@@ -19,10 +19,15 @@ public class StatusListItem extends RelativeLayout {
 	public StatusListItem(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
+	
+	@Override
+  protected void onFinishInflate() {
+    super.onFinishInflate();
+    findViews();
+  }
 
-	public void setStatus(Status status) {
+  public void setStatus(Status status) {
 		final User user = status.getUser();
-		findViews();
 		screenName.setText(user.getScreenName());
 		statusText.setText(status.getText());
 	}

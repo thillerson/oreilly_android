@@ -54,7 +54,6 @@ public class StatusListActivity extends ListActivity {
       ArrayList<Status> statii = twitter.getHomeTimeline();
       adapter = new StatusListAdapter(this, statii);
       setListAdapter(adapter);
-      getListView().setSelection(1);
     } catch (TwitterException e) {
       throw new RuntimeException("Unable to load home timeline",e);
     }

@@ -12,6 +12,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -108,6 +109,11 @@ public class PostActivity extends Activity implements PostTweetResponder {
       public void onTextChanged(CharSequence s, int start, int before, int count) {
         int charsLeft = 140 - s.length();
         counterText.setText(String.valueOf(charsLeft));
+        if (charsLeft <= 0) {
+          counterText.setTextColor(Color.RED);
+        } else {
+          counterText.setTextColor(Color.BLACK);
+        }
       }
     });
   }
