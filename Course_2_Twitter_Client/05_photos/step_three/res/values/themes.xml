@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.OTweet" parent="@android:Theme.Light">
+		<!-- Colors -->
+        <item name="android:windowBackground">@color/color_foreground</item>
+        <item name="android:colorForeground">@color/color_foreground</item>
+        <item name="android:colorForegroundInverse">@color/color_foreground_inverse</item>
+		<item name="android:colorBackground">@color/color_background</item>
+		<!-- Text -->
+        <item name="android:textAppearance">@style/TextAppearance</item>
+		<!-- Window -->
+        <item name="android:windowTitleSize">38dip</item>
+        <item name="android:windowTitleStyle">@style/WindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+		<!-- Components -->
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:editTextStyle">@style/Widget.EditText</item>
+        <item name="android:listViewStyle">@style/Widget.ListView</item>
+	</style>
+</resources>

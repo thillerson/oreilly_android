@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance" parent="android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorLink">#FFEE0000</item>
+    </style>
+    
+    <style name="TextAppearance.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+    <style name="TextAppearance.Button">
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+    <style name="TextAppearance.EditText">
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="link_like_text">
+    	<item name="android:textColor">#00f</item>
+    </style>
+ 
+    <style name="TextAppearance.Title.WindowTitle">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/window_title_background</item>
+    </style>
+
+    <style name="WindowTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.Title.WindowTitle</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+    
+    <style name="Widget" parent="android:Widget">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+    </style>
+    
+    <style name="Widget.Button" parent="android:Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+     </style>
+
+    <style name="Widget.EditText" parent="android:Widget.EditText">
+        <item name="android:textAppearance">@style/TextAppearance.EditText</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:gravity">top</item>
+     </style>
+     
+    <style name="Widget.ListView" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector_background</item>
+        <item name="android:cacheColorHint">@color/color_foreground</item>
+        <item name="android:divider">@drawable/list_item_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+</resources>

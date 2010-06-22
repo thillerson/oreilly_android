@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<TextView
+	   	android:id="@+id/twit_pic_credentials"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_margin="5dip"
+	   	android:text="@string/twitpic_credentials"
+    	style="@style/TextAppearance.Title" />
+	<TextView
+	   	android:id="@+id/twit_pic_credentials_description"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+    	android:layout_below="@id/twit_pic_credentials"
+	   	android:layout_margin="5dip"
+	   	android:text="@string/twit_pic_credentials_description" />
+	<EditText
+	   	android:id="@+id/username"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+    	android:layout_below="@id/twit_pic_credentials_description"
+	   	android:layout_margin="5dip"
+	   	android:hint="@string/twitter_username"
+	   	android:imeOptions="actionNext" />
+	<EditText
+	   	android:id="@+id/password"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+    	android:layout_below="@id/username"
+	   	android:layout_margin="5dip"
+	   	android:hint="@string/twitter_password"
+	   	android:password="true"
+	   	android:imeOptions="actionDone" />
+	<Button
+	   	android:id="@+id/save_button"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:layout_margin="5dip"
+	   	android:layout_below="@id/password"
+	   	android:text="@string/save"
+	   	android:onClick="saveButtonClicked" />
+</RelativeLayout>

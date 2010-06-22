@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oreilly.android.otweet" android:versionCode="1" android:versionName="1.0.0">
+
+	<uses-sdk android:minSdkVersion="7" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<supports-screens android:smallScreens="true"
+    	android:normalScreens="true"
+    	android:largeScreens="true"
+    	android:anyDensity="true" />
+	
+    <application
+    	android:name=".OTweetApplication"
+    	android:icon="@drawable/icon"
+    	android:label="@string/app_name"
+    	android:theme="@style/Theme.OTweet">
+        <activity android:name=".activities.StatusListActivity" android:label="@string/app_name">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AuthorizationActivity" android:label="@string/authorization" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name=".activities.StatusDetailActivity" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name=".activities.PostActivity" android:label="@string/what_s_happening" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name=".activities.SettingsActivity" android:label="@string/settings" android:configChanges="keyboard|keyboardHidden|orientation" />
+    </application>
+</manifest> 
